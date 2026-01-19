@@ -1,5 +1,8 @@
 #! /bin/zsh
 
+brew install --cask linearmouse
+brew install httpie
+
 brew install fd
 brew install neovim
 
