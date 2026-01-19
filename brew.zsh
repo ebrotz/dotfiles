@@ -5,6 +5,9 @@
 brew install --cask linearmouse
 brew install httpie
 brew install --cask font-0xproto-nerd-font
+brew install pkgconf
+# Spellchecker for LibreOffice, OpenOffice, etc. Will be used by gospel.
+brew install hunspell
 # A better grep that honors gitignore, skips binaries, and skips hidden files.
 # It will also be used by neovim.
 brew install ripgrep
