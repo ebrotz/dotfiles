@@ -1,6 +1,7 @@
 #! /bin/zsh
 
 brew install fd
+brew install neovim
 
 # Java
 
