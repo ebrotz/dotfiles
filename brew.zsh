@@ -18,6 +18,9 @@ brew install ripgrep
 brew install fd
 brew install neovim
 
+# Docker
+brew install dockerfmt
+
 # Lua
 brew install stylua
 
