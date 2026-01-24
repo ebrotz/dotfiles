@@ -6,6 +6,9 @@ brew install --cask linearmouse
 brew install httpie
 brew install --cask font-0xproto-nerd-font
 brew install pkgconf
+# Most of our tooling will require a 'system' NodeJS, since they will do
+# 'npm install ...' on installation.
+brew install node
 # Spellchecker for LibreOffice, OpenOffice, etc. Will be used by gospel.
 brew install hunspell
 # A better grep that honors gitignore, skips binaries, and skips hidden files.
@@ -14,6 +17,9 @@ brew install ripgrep
 
 brew install fd
 brew install neovim
+
+# Lua
+brew install stylua
 
 # Java
 
