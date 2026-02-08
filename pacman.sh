@@ -19,7 +19,7 @@ pacman $PACMAN_OPTS go \
 	delve
 
 # Node.js
-pacman $PACMAN_OPTS nodejs-lts-krypton
+pacman $PACMAN_OPTS nodejs-lts-krypton npm
 
 # Docker
 pacman $PACMAN_OPTS dockerfmt
