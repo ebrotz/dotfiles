@@ -10,7 +10,8 @@ pacman $PACMAN_OPTS httpie \
 	ripgrep \
 	fd \
 	hunspell \
-	lazygit
+	lazygit \
+	tree-sitter-cli
 
 # Editors
 pacman $PACMAN_OPTS neovim
