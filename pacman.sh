@@ -1,6 +1,6 @@
 #! /usr/bin/env bash
 
-PACMAN_OPTS="-Syy --needed"
+PACMAN_OPTS="-S --needed"
 
 # Terminal
 pacman $PACMAN_OPTS nerd-fonts
@@ -9,7 +9,8 @@ pacman $PACMAN_OPTS nerd-fonts
 pacman $PACMAN_OPTS httpie \
 	ripgrep \
 	fd \
-	hunspell
+	hunspell \
+	lazygit
 
 # Editors
 pacman $PACMAN_OPTS neovim
