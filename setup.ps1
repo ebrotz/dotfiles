@@ -1,4 +1,4 @@
-$targetBuckets = @('extras', 'nerd-fonts')
+$targetBuckets = @('extras', 'nerd-fonts', 'main')
 $installedBuckets = $(scoop bucket list)
 
 if (-not (Get-Command scoop -ErrorAction SilentlyContinue)) {
@@ -14,6 +14,5 @@ foreach ($b in $targetBuckets) {
 	}
 }
 
-scoop install vim neovim curl wget go lazygit ripgrep fd jq zig cmake luarocks lua unzip gzip stylua curlie rust nvm rustup extras/obsidian
+scoop install vim neovim curl wget go lazygit ripgrep fd jq zig cmake luarocks lua unzip gzip stylua curlie rust nvm rustup main/bicep extras/meld main/gh
 go install github.com/docker/docker-language-server/cmd/docker-language-server@latest
-
