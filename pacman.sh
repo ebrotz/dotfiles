@@ -32,3 +32,6 @@ pacman $PACMAN_OPTS nvm
 # Lua
 pacman $PACMAN_OPTS stylua
 
+# Rust
+pacman $PACMAN_OPTS rustup
+
