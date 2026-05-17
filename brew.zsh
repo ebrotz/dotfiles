@@ -14,6 +14,8 @@ brew install hunspell
 # A better grep that honors gitignore, skips binaries, and skips hidden files.
 # It will also be used by neovim.
 brew install ripgrep
+# Just a command runner. Think of it as a more modern make
+brew install just
 
 brew install fd
 brew install neovim
