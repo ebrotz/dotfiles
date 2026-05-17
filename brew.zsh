@@ -33,5 +33,8 @@ brew install delve
 # Web development
 brew install nvm
 
+# Rust
+brew install rust
+
 ## TODO Should make '0xproto nerd font the default system prompt
 
