@@ -14,5 +14,5 @@ foreach ($b in $targetBuckets) {
 	}
 }
 
-scoop install vim neovim curl wget go lazygit ripgrep fd jq zig cmake luarocks lua unzip gzip stylua curlie rust nvm rustup main/bicep extras/meld main/gh
+scoop install vim neovim curl wget go lazygit ripgrep fd jq zig cmake luarocks lua unzip gzip stylua curlie rust nvm rustup main/bicep extras/meld main/gh main/docfx main/fzf main/just
 go install github.com/docker/docker-language-server/cmd/docker-language-server@latest
