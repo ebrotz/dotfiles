@@ -1,0 +1,15 @@
+# Copilot CLI ignores
+copilot/crash-context/
+copilot/ide/
+copilot/logs/
+copilot/mcp-oauth-config/
+copilot/pkg/
+copilot/restart/
+copilot/session-state/
+copilot/command-history-state.json
+copilot/config.json
+copilot/permissions-config.json
+copilot/session-store.*
+copilot/settings.json
+copilot/vscode.session.metadata.cache.json
+copilot/sidebar*
