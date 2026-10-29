@@ -1,18 +1,21 @@
-$targetBuckets = @('extras', 'nerd-fonts', 'main')
-$installedBuckets = $(scoop bucket list)
-
-if (-not (Get-Command scoop -ErrorAction SilentlyContinue)) {
-	Write-Host "Installing scoop"
-	Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-	Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
-}
-
-foreach ($b in $targetBuckets) {
-	if (!$installedBuckets -contains $b.Name) {
-		Write-Host "Adding scoop bucket $b.Name"
-		scoop bucket add $b.Name
-	}
-}
-
-scoop install vim neovim curl wget go lazygit ripgrep fd jq zig cmake luarocks lua unzip gzip stylua curlie rust nvm rustup main/bicep extras/meld main/gh main/docfx main/fzf main/just
-go install github.com/docker/docker-language-server/cmd/docker-language-server@latest
+winget install -e --id Microsoft.DotNet.SDK.8
+winget install Microsoft.DotNet.SDK.10
+winget install -e --id sharkdp.fd
+winget install -e --id vim.vim
+winget install -e --id BurntSushi.ripgrep.GNU
+winget install -e --id stedolan.jq
+winget install -e --id MikeFarah.yq
+winget install -e --id DEVCOM.Lua
+winget install -e --id GitHub.cli
+winget install -e --id GnuWin32.UnZip
+winget install -e --id GnuWin32.Gzip
+winget install -e --id Rustlang.Rustup
+winget install -e --id CoreyButler.NVMforWindows
+winget install -e --id Microsoft.Bicep
+winget install -e --id AsciidocFX.AsciidocFX
+winget install -e --id junegunn.fzf
+winget install -e --id Casey.Just
+winget install -e --id jftuga.less
+winget install -e --id ShiningLight.OpenSSL.Dev
+winget install -e --id Neovim.Neovim
+winget install Python.Python.3.14
